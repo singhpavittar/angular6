@@ -1,0 +1,10 @@
+<div>
+  <h3>{{hero.name | uppercase}} Details</h3>
+  <div> <span>id:</span> {{hero.id}} </div>
+  <div>
+    <label>name
+      <input type="text" [(ngModel)]="hero.name" name="heroname" placeholder="name">
+    </label>
+  </div>
+  <button (click)="save()">save</button>
+</div>
